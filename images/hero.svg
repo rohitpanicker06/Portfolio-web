@@ -1,0 +1,25 @@
+<svg width="639" height="645" viewBox="0 0 639 645" fill="none" >
+<rect x="321" width="161" height="161" rx="20" fill="#5900CE"/>
+<rect x="161" y="161" width="161" height="161" rx="20" fill="white"/>
+<ellipse cx="237.5" cy="405" rx="76.5" ry="79" fill="#00F7FF"/>
+<ellipse cx="397.5" cy="240" rx="76.5" ry="79" fill="#FF64CB"/>
+<g opacity="0.29" filter="url(#filter0_d_9_59)">
+<rect x="474" y="161" width="161" height="161" rx="20" fill="#5900CE"/>
+<rect x="474.5" y="161.5" width="160" height="160" rx="19.5" stroke="black"/>
+</g>
+<rect opacity="0.21" y="326" width="161" height="161" rx="20" fill="white"/>
+<rect x="321" y="324" width="161" height="161" rx="20" fill="#5900CE"/>
+<rect x="160" y="484" width="161" height="161" rx="20" fill="white"/>
+<defs>
+<filter id="filter0_d_9_59" x="470" y="161" width="169" height="169" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_59"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_59" result="shape"/>
+</filter>
+</defs>
+</svg>

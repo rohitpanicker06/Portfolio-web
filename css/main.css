@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #6E00FF;
+}
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+header .logo {
+  color: #00F7FF;
+  font-weight: bold;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header, .hero-design {
+  display: none;
+}
+
+.hero {
+  background: #5900CE;
+  color: white;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  font-weight: bold;
+  color: #FF64CB;
+}
+.meet span {
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+
+.sroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #e5d5fa;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5900CE;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.shifttop {
+  z-index: 2;
+  top: -150;
+  left: 0;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: #3b3b3b;
+  margin-bottom: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background-color: #FF64CB;
+}
+
+.skills-container ul li {
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+.skills-container ul li .icon-container.one {
+  width: 50px;
+}
+.skills-container ul li .icon-container.two {
+  width: 100px;
+}
+.skills-container ul li .icon-container.three {
+  width: 60px;
+}
+.skills-container ul li .skill-title {
+  font-weight: bold;
+}
+.skills-container ul li .featured-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #f7f7f7;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+  .left, .portfolio-left {
+    display: grid;
+    place-content: center;
+    position: top;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: 5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #5900CE;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 2em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #5900CE;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+}
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+.semiRect {
+  animation: rectAnim 1s infinite alternate-reverse;
+}
+
+.scroll-animation1 {
+  animation: scrollAnim1 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes scrollAnim1 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+  to {
+    transform: translate(0px, 325px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+}
+
+@keyframes scrollAnim1 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+  to {
+    transform: translate(0px, 325px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+}
+.scroll-animation2 {
+  animation: scrollAnim2 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes scrollAnim2 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #5900CE;
+  }
+  to {
+    transform: translate(0px, -325px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+}
+
+@keyframes scrollAnim2 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #5900CE;
+  }
+  to {
+    transform: translate(0px, -325px);
+    z-index: 5;
+    fill: #5900CE;
+  }
+}
+.white-anim1 {
+  animation: whiteAnim1 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes whiteAnim1 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(0px, 320px);
+    z-index: 5;
+  }
+}
+
+@keyframes whiteAnim1 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(0px, 320px);
+    z-index: 5;
+  }
+}
+.white-anim2 {
+  animation: whiteAnim2 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes whiteAnim2 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 50;
+  }
+  to {
+    transform: translate(0px, -320px);
+    z-index: 5;
+  }
+}
+
+@keyframes whiteAnim2 {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 50;
+  }
+  to {
+    transform: translate(0px, -320px);
+    z-index: 5;
+  }
+}
+.circle-pinkanim {
+  animation: circleAnimPink 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnimPink {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #FF64CB;
+  }
+  to {
+    transform: translate(-160px, 165px);
+    z-index: 5;
+    fill: #FF64CB;
+    background-position: top left;
+  }
+}
+
+@keyframes circleAnimPink {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #FF64CB;
+  }
+  to {
+    transform: translate(-160px, 165px);
+    z-index: 5;
+    fill: #FF64CB;
+    background-position: top left;
+  }
+}
+.circle-blueanim {
+  animation: circleAnimblue 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnimblue {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #00F7FF;
+  }
+  to {
+    transform: translate(160px, -165px);
+    z-index: 5;
+    fill: #00F7FF;
+  }
+}
+
+@keyframes circleAnimblue {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 30;
+    fill: #00F7FF;
+  }
+  to {
+    transform: translate(160px, -165px);
+    z-index: 5;
+    fill: #00F7FF;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+@-webkit-keyframes circleAnim {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+    fill: #FF64CB;
+  }
+  to {
+    transform: translate(0px, 30px);
+    z-index: 5;
+    fill: #00F7FF;
+  }
+}
+@keyframes circleAnim {
+  from {
+    transform: translate(0px, 0px);
+    z-index: 5;
+    fill: #FF64CB;
+  }
+  to {
+    transform: translate(0px, 30px);
+    z-index: 5;
+    fill: #00F7FF;
+  }
+}
+@-webkit-keyframes rectAnim {
+  from {
+    z-index: 5;
+    border-color: #00F7FF;
+  }
+  to {
+    z-index: 5;
+    border-color: #FF64CB;
+  }
+}
+@keyframes rectAnim {
+  from {
+    z-index: 5;
+    border-color: #00F7FF;
+  }
+  to {
+    z-index: 5;
+    border-color: #FF64CB;
+  }
+}
+.additionalProjects {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 3em;
+}
+
+.jett {
+  position: absolute;
+  left: 1150px;
+  top: 400px;
+}/*# sourceMappingURL=main.css.map */
