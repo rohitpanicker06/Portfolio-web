@@ -97,10 +97,330 @@
         <iframe class="jett" src="images/giphy.gif" width="400" height="480" frameBorder="0"></iframe>
     </div>!-->
 
+  <style>
+    .inner-skills{
+        padding-top: 20px;
+    }
 
+    .header-skills{
+        text-align: center;
+                color:#fff;
+                padding: 1rem;
+                position: relative;
+    }
+
+    .header-skills::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 100px;
+        background-color: #2ecc71;
+    }
+
+    .skill-container1{
+        display:grid;
+         grid-template-columns:repeat(8,1fr);
+         justify-content:center;
+         align-items:center;
+         text-align:center;
+         grid-gap:0.5rem;
+         padding: 0.2rem 40px;
+         font-size: 1.2rem;
+    }
+
+    .skill-box{
+        padding: 1rem;
+        color:#ddd; 
+        cursor:pointer
+    }
+
+    
+
+    .skill-title{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:0.5rem;
+        margin-bottom:0.5rem;
+        position:relative
+    }
+    .skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before{
+
+        width: 35px;
+    }
+
+    .skill-box:hover .img-skills{
+        transform: translateY(-10px);
+
+
+    }
+
+
+
+    .skill-title::after{
+
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        width: 0;
+        height: 4px;
+        border-radius: 2px 0 0 2px;
+        background-color: #2ecc71;
+        transition:.5s
+    }
+
+    .skill-title::before{
+
+      content: '';
+position: absolute;
+bottom: 0;
+left: 50px;
+width: 0;
+height: 4px;
+border-radius:  0 2px 2px 0;
+background-color: #2ecc71;
+transition:.5s
+}
+
+
+
+
+
+    .img-skills{
+        width:90px;
+        height:90px;
+        position:relative;
+        border-radius:45px;
+        background-color:#fff;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-skills::after{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 50%;
+        height: 90px;
+        background:rgba(100,100,100,0.5);
+        border-radius: 45px 0 0 45px;
+        transition: .5s;
+
+
+    }
+    .skill-icon{
+        width: 50px;
+        z-index: 2;
+
+    }
+
+    .skill-title h3{
+        color:#fff;
+        margin-top:0.5rem;
+        
+    }
+    
+  </style>
+    <section style="padding: 0em 1em; background-color: gray;">
+       
+            <div class="inner-skills" style=" padding-top: 20px;">
+                <div class="header-skills" style=" text-align: center;
+                color:#fff;
+                padding: 1rem;">
+                <h1>My Skills</h1>
+                </div>
+                <div class="skill-container1">
+                <div class="skill-box" style="padding: 1rem;color:#ddd; cursor:pointer">
+                 <div class="skill-title" style="display:flex;flex-direction:column;align-items:center;padding:0.5rem;margin-bottom:0.5rem">
+                    <div class="img-skills">
+                        <img src="images/html.svg" class="skill-icon">
+                     </div>
+                     <h3>HTML 5</h3>
+                    </div>
+                
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/css.svg" class="skill-icon">
+                         </div>
+                         <h3>CSS</h3>
+                       </div>
+                    
+                   </div>
+                 
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/javascript.svg" class="skill-icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/python.svg"class="skill-icon">
+                        </div>
+                        <h3>Python</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/java.svg" class="skill-icon">
+                        </div>
+                        <h3>Java</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/mysql.svg" class="skill-icon">
+                        </div>
+                        <h3>Mysql</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/mongodb.svg" class="skill-icon">
+                        </div>
+                        <h3>MongoDB</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/postGres.svg" class="skill-icon">
+                        </div>
+                        <h3>PostGres</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/kubernetes.svg" class="skill-icon">
+                        </div>
+                        <h3>Kubernetes</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/aws.svg" class="skill-icon">
+                        </div>
+                        <h3>AWS</h3>
+                       </div>
+                       
+                   </div>
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/rabbitmq.svg" class="skill-icon">
+                        </div>
+                        <h3>RabbitMQ</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/android.svg" class="skill-icon">
+                        </div>
+                        <h3>Android</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/angular-js.svg" class="skill-icon">
+                        </div>
+                        <h3>AngularJS</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/react.svg" class="skill-icon">
+                        </div>
+                        <h3>React</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="cplus/cplus.svg" class="skill-icon">
+                        </div>
+                        <h3>C++</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   <div class="skill-box">
+                    <div class="skill-title">
+                       <div class="img-skills">
+                           <img src="images/docker_one.svg" class="skill-icon">
+                        </div>
+                        <h3>Docker</h3>
+                       </div>
+                       
+                   </div>
+
+
+                   
+            </div>
+            </div>
+            
+            
+    
+        
+    </section>
 
    
     
+   
+   
+   
+   
+   
+   
+   
     <section class = "featured">
         <div class="left">
             <div class="inner-transition2 transition2">

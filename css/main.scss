@@ -6,6 +6,28 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.inner-skills{
+    padding-top: 20px;
+}
+.header-skills{
+
+    text-align: center;
+    color:#fff;
+    padding: 1rem;
+}
+
+.header-skills:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+
+
+}
 
 ul{
     list-style-type: none;
@@ -136,6 +158,8 @@ section{
 
 }
 
+
+
 .featured{
     position: relative;
 
@@ -186,6 +210,9 @@ section{
     font-weight: 500;
 }
 
+
+
+
 .skills{
     background-color:#FF64CB
 }
@@ -224,6 +251,8 @@ section{
     .featured-desc{
         margin-bottom: 2em;
     }
+
+   
 }
 
 .portfolio{
