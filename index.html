@@ -671,7 +671,7 @@ background-color: #2ecc71;
 }
 .skill-container1{
         display:grid;
-         grid-template-columns:repeat(10,1fr);
+         grid-template-columns:repeat(8,1fr);
          justify-content:center;
          align-items:center;
          text-align:center;
@@ -682,6 +682,150 @@ background-color: #2ecc71;
 .skill-container12{
 display:grid;
  grid-template-columns:repeat(4,1fr);
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ grid-gap:0rem;
+ padding: 0.1rem 10px;
+ font-size: 1.2rem;
+}
+
+.skill-box2{
+padding: 1rem;
+color:#ddd; 
+cursor:pointer
+}
+
+
+
+.skill-title2{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:0.5rem;
+margin-bottom:0.5rem;
+position:relative
+}
+.skill-box2:hover > .skill-title2::after, .skill-box2:hover > .skill-title2::before{
+
+width: 35px;
+}
+
+.skill-box2:hover .img-skills2{
+transform: translateY(-10px);
+
+
+}
+
+
+
+.skill-title2::after{
+
+content: '';
+position: absolute;
+bottom: 0;
+right: 50px;
+width: 0;
+height: 4px;
+border-radius: 2px 0 0 2px;
+background-color: #2ecc71;
+transition:.5s
+}
+
+.skill-title2::before{
+
+content: '';
+position: absolute;
+bottom: 0;
+left: 50px;
+width: 0;
+height: 4px;
+border-radius:  0 2px 2px 0;
+background-color: #2ecc71;
+transition:.5s
+}
+
+
+
+
+
+.img-skills2{
+width:100px;
+height:100px;
+position:relative;
+border-radius:45px;
+background-color:gray;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.img-skills2::after{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+width: 50%;
+height: 90px;
+background:rgba(100,100,100,0.5);
+border-radius: 45px 0 0 45px;
+transition: .5s;
+
+
+}
+.skill-icon2{
+width: 200px;
+z-index: 2;
+
+}
+
+.skill-title2 h4{
+color:#fff;
+margin-top:0.5rem;
+
+}
+
+
+
+}
+
+
+@media only screen and (min-width:1250px){
+
+.inner-skills2{
+padding-top: 20px;
+}
+
+.header-skills2{
+text-align: center;
+        color:#fff;
+        padding: 1rem;
+        position: relative;
+}
+.skill-container1{
+display:grid;
+ grid-template-columns:repeat(10,1fr);
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ grid-gap:0rem;
+ padding: 0.1rem 20px;
+ font-size: 1.2rem;
+}
+.header-skills2::after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+height: 4px;
+width: 100px;
+background-color: #2ecc71;
+}
+
+.skill-container12{
+display:grid;
+ grid-template-columns:repeat(2,1fr);
  justify-content:center;
  align-items:center;
  text-align:center;
